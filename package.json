@@ -1,0 +1,30 @@
+{
+  "name": "rxkafka",
+  "author": "Trevor Livingston <tlivings@gmail.com>",
+  "description": "",
+  "version": "1.0.0",
+  "main": "./lib",
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tlivings/rxkafka.git"
+  },
+  "bugs": "http://github.com/tlivings/rxkafka/issues",
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "nyc": "^11.3.0",
+    "tape": "^4.9.0"
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "lint": "eslint lib",
+    "cover": "nyc --check-coverage --reporter=lcov --lines 100 npm test && nyc report"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "rxjs": "^5.5.6"
+  }
+}
